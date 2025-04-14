@@ -41,9 +41,9 @@ const Contact = () => {
       transition={{ duration: 0.5 }}
       className="relative min-h-screen bg-white overflow-hidden"
     >
-      <main className="absolute top-[100px] left-[100px] flex flex-col lg:flex-row gap-8 items-start z-10">
+      <main className="relative z-10 px-4 sm:px-8 lg:px-16 py-20 flex flex-col lg:flex-row gap-10 items-start max-w-7xl mx-auto">
         {/* Contact Information Section */}
-        <section className="w-full lg:w-1/2">
+        <section className="w-full lg:w-1/2 max-w-full">
           <motion.header
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -54,7 +54,7 @@ const Contact = () => {
               Contact Us
             </h1>
             <p className="text-gray-600 text-lg mt-4">
-              Need to get in touch with us? Either fill out the form with your inquiry or find the department phone, email you'd like to contact below
+              Need to get in touch with us? Either fill out the form with your inquiry or find the department phone, email you'd like to contact below.
             </p>
           </motion.header>
 
@@ -133,7 +133,7 @@ const Contact = () => {
         </section>
 
         {/* Contact Form Section */}
-        <section className="w-full lg:w-1/2">
+        <section className="w-full lg:w-1/2 max-w-full">
           <motion.div
             variants={cardVariants}
             initial="hidden"
