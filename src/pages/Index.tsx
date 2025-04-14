@@ -62,7 +62,7 @@ const Index = () => {
             className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full overflow-hidden shadow-lg cursor-pointer border-4 border-white dark:border-gray-800"
           >
             <img
-              src="/lovable-uploads/me.jpg"
+              src="/images/me.jpg"
               alt="Sujay's Profile"
               className="w-full h-full object-cover"
               loading="lazy"
