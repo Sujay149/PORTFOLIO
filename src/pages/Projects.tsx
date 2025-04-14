@@ -34,7 +34,7 @@ const Projects = () => {
       id: 4,
       title: "Research & Startup Management System",
       description: "The Research & Startup Management System is a centralized platform designed to streamline the management of research, intellectual property rights (IPR), innovation projects, and startups in Gujarat. It enables efficient data handling, collaboration, and resource allocation for researchers, innovators, and entrepreneurs.",
-      image: "/lovable-uploads/sih.png",
+      image: "/images/sih.png",
       tags: ["React.js", "Tailwind CSS", "Bootstrap", "Material UI", "MongoDB", "Node.js"],
       url: "https://example.com/project-three",
       github: "https://github.com/Sujay149/FINALSIH",
