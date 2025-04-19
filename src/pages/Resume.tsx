@@ -1,20 +1,25 @@
 import React from 'react';
-import { Button } from '@/components/ui/button';
 import { Download, Phone, Mail, MapPin, ExternalLink } from 'lucide-react';
 import { Separator } from '@/components/ui/separator';
 
 const Resume = () => {
+  const resumeDownloadLink = 'https://drive.google.com/uc?export=download&id=1YLGBUAO-Y3PWxKkwFxJJJfv6YqqU3HH4';
+
   return (
     <div className="container-custom py-12">
       <div className="mb-12">
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-8 gap-4">
           <h1 className="text-4xl font-bold">My Resume</h1>
-          <Button className="flex items-center gap-2">
+          <a
+            href={resumeDownloadLink}
+            download
+            className="flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90"
+          >
             <Download size={16} />
             Download PDF
-          </Button>
+          </a>
         </div>
-        
+
         <div className="bg-white rounded-lg shadow-lg p-8">
           {/* Header */}
           <div className="mb-8">
@@ -34,7 +39,7 @@ const Resume = () => {
               </div>
             </div>
           </div>
-          
+
           {/* Summary */}
           <div className="mb-8">
             <h3 className="text-xl font-bold mb-3">SUMMARY</h3>
@@ -42,17 +47,18 @@ const Resume = () => {
               Full-stack Developer | B.Tech in Computer Science and Design (Graduating 2026)
             </p>
             <p className="text-gray-700 mb-3">
-              Results-driven Full-stack Developer proficient in React, Django, Node.js, and database management systems (MongoDB, SQLite, MySQL). 
-              Successfully developed a feature-rich notes-taking app during a Python Full-stack internship at IDDT Blackbucks, implementing CRUD operations 
-              with Django and full functionality to enhance user experience.
+              Results-driven Full-stack Developer proficient in React, Django, Node.js, and database management systems
+              (MongoDB, SQLite, MySQL). Successfully developed a feature-rich notes-taking app during a Python Full-stack
+              internship at IDDT Blackbucks, implementing CRUD operations with Django and full functionality to enhance
+              user experience.
             </p>
             <p className="text-gray-700">
-              Skilled in development, cloud deployment, and version control with GitHub. Currently pursuing a B.Tech degree at SRKR Engineering College 
-              (JNTUK) with a CGPA of 8.21. Passionate about creating innovative solutions and eager to contribute to impactful full-stack and mobile 
-              development projects.
+              Skilled in development, cloud deployment, and version control with GitHub. Currently pursuing a B.Tech
+              degree at SRKR Engineering College (JNTUK) with a CGPA of 8.21. Passionate about creating innovative
+              solutions and eager to contribute to impactful full-stack and mobile development projects.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
             {/* Education */}
             <div>
@@ -66,7 +72,7 @@ const Resume = () => {
                 <p className="text-gray-700">CGPA: 8.21</p>
               </div>
             </div>
-            
+
             {/* Skills */}
             <div>
               <h3 className="text-xl font-bold mb-4">SKILLS</h3>
@@ -79,11 +85,10 @@ const Resume = () => {
               </ul>
             </div>
           </div>
-          
+
           {/* Work Experience */}
           <div className="mb-8">
             <h3 className="text-xl font-bold mb-4">WORK EXPERIENCE</h3>
-            
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
               {/* Job 1 */}
               <div className="bg-gray-50 p-4 rounded-lg">
@@ -99,7 +104,7 @@ const Resume = () => {
                   <li>Deployed the platform to production: <a href="https://wonderkids.great-site.net/?i=1" className="text-blue-600 hover:underline">wonderkids.great-site.net</a></li>
                 </ul>
               </div>
-              
+
               {/* Job 2 */}
               <div className="bg-gray-50 p-4 rounded-lg">
                 <div className="flex justify-between mb-2">
@@ -114,11 +119,9 @@ const Resume = () => {
                   <li>Focused on user experience and simplicity, ensuring an intuitive interface.</li>
                 </ul>
               </div>
-              
-              {/* Removed inaccurate jobs (Google, SIH Gujarat) */}
             </div>
           </div>
-          
+
           {/* Projects */}
           <div className="mb-8">
             <h3 className="text-xl font-bold mb-4">PROJECTS</h3>
@@ -138,7 +141,7 @@ const Resume = () => {
                   <li>Deployed to production: <a href="https://signup-1499.web.app" className="text-blue-600 hover:underline">signup-1499.web.app</a></li>
                 </ul>
               </div>
-              
+
               {/* Project 2 */}
               <div className="bg-gray-50 p-4 rounded-lg">
                 <div className="flex justify-between mb-2">
@@ -152,7 +155,7 @@ const Resume = () => {
                   <li>Created an interactive platform encouraging culinary experimentation for users of all skill levels.</li>
                 </ul>
               </div>
-              
+
               {/* Project 3 */}
               <div className="bg-gray-50 p-4 rounded-lg">
                 <div className="flex justify-between mb-2">
@@ -166,7 +169,7 @@ const Resume = () => {
                   <li>Enabled users to control and transform their destination links with ease.</li>
                 </ul>
               </div>
-              
+
               {/* Project 4 */}
               <div className="bg-gray-50 p-4 rounded-lg">
                 <div className="flex justify-between mb-2">
@@ -183,7 +186,7 @@ const Resume = () => {
               </div>
             </div>
           </div>
-          
+
           {/* Certifications */}
           <div className="mb-8">
             <h3 className="text-xl font-bold mb-4">CERTIFICATIONS</h3>
@@ -202,7 +205,7 @@ const Resume = () => {
               </ul>
             </div>
           </div>
-          
+
           {/* Languages */}
           <div className="mt-8">
             <h3 className="text-xl font-bold mb-2">LANGUAGES</h3>
